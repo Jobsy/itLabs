@@ -6,7 +6,7 @@ class TradesController {
         try {
            const { body } = req;
            const response = await TradesModel.create(body);
-           res.status(201).json(response)  ;
+           res.status(201).json(response);
         } catch (error) {
             throw new Error(error.message);
         }
